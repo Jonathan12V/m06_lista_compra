@@ -1,10 +1,10 @@
 class registro:
-    def __init__(self, articulo, cantidad):
-        self.articulo = articulo
-        self.cantidad = cantidad
+    def __init__(self, article, quantitat):
+        self.article = article
+        self.quantitat = quantitat
 
     def get_quantitat(self):
-        return self.cantidad
+        return self.quantitat
 
-    def set_nom(self, nueva_cantidad):
-        self.cantidad = nueva_cantidad
+    def set_quantitat(self, quantitat):
+        self.quantitat = quantitat
