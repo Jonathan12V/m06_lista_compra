@@ -1,30 +1,29 @@
-from articulo import articulo
-class categoria():
+class Categoria:
     
-    def __init__(self, nombre):
+    def __init__(self, nom):
 
-        self.nombre = nombre
-        self.articulos = []
+        self.nom = nom
+        self.articles = []
 
-    def get_nombre(self):
+    def get_nom(self):
         return self._nombrre
     
-    def set_nombre(self, nombre):
-        self.nombre = nombre
+    def set_nom(self, nom):
+        self.nom = nom
 
-    def get_articulos(self):
-        return self.articulos
+    def get_articles(self):
+        return self.articles
 
-    def add_articulos(self, articulos):
-        self.articulos.append(articulos)
-        return articulos
+    def add_articles(self, articles):
+        self.articles.append(articles)
+        return articles
     
     def delete_article(self, nom_article):
-        for article in self.articulos:
+        for article in self.articles:
             if article.get_nom() == nom_article:
-                self.articulos.remove(article)
+                self.articles.remove(article)
                 return True
         return False
             
     def __str__(self):
-        return f"Categoria: {self.nombre}, Articulos: {', '.join(articulo.get_nom() for articulo in self.articulos)}"
+        return f"Categoria: {self.nom}, Articles: {', '.join(articles.get_nom() for articles in self.articles)}"
