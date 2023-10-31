@@ -1,0 +1,3 @@
+
+class articulo():
+    pass
