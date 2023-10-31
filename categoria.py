@@ -6,7 +6,7 @@ class Categoria:
         self.articles = []
 
     def get_nom(self):
-        return self._nombrre
+        return self._nom
     
     def set_nom(self, nom):
         self.nom = nom
