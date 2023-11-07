@@ -108,9 +108,7 @@ def main():
     # Obtener categorías
     print("\n------ Obtener Categoria ------")
     for categoria in categorias: 
-        categoria_obtenida = lista.read_categoria("Begudes")
-        print("Intentando obtener categoria:", categoria.get_nom())
-        print("Categoría obtenida:", categoria_obtenida)  # Imprimir la categoría obtenida
+        print("Intentando obtener categoria:", categoria)
 
     # Actualizar Categoria
     print("\n------ Actualizar Categoria ------")
