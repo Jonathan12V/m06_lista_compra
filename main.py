@@ -103,6 +103,7 @@ def main():
     lista.read_categoria("Neteja").add_articles(articles[6])
     lista.read_categoria("Fruita i verdures").add_articles(articles[7])
     lista.read_categoria("Fruita i verdures").add_articles(articles[8])
+    lista.read_categoria("Almacen").add_articles(articles[8])
 
     # Obtener categorías
     print("\n------ Obtener Categoria ------")
